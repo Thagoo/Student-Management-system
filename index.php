@@ -10,6 +10,9 @@
     <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
 </head>
 <body>
+    <header>
+        <h1>Student Management System</h1>
+    </header>
     <div class="container" id="container"onclick="Menu(this)">
          <div class="bar1"></div>
          <div class="bar2"></div>

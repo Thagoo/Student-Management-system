@@ -1,8 +1,14 @@
 body {
     background-color: #0a223d;
 }
-
-.container {
+header {
+    background-color: rgb(211, 217, 231);
+    padding: 4px;
+    text-align: center;
+    font-size: 15px;
+    color: #0a223d;
+}
+  .container {
     display: inline-block;
     cursor: pointer;
     position: relative;
