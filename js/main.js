@@ -1,9 +1,8 @@
-function Menu(x) {
-    x.classList.toggle("change");
-    var y = document.getElementById("menu");
-    if (y.style.display != "block") {
-    y.style.display = "block";
+function showMenu() {
+  var x = document.getElementById("menuLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
   } else {
-    y.style.display = "none";
+    x.style.display = "block";
   }
 }

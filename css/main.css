@@ -1,87 +1,43 @@
 body {
     background-color: #0a223d;
 }
-header {
-    background-color: rgb(211, 217, 231);
-    padding: 4px;
-    text-align: center;
-    font-size: 15px;
-    color: #0a223d;
-}
-  .container {
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    left: 90%;
+.topnav {
+  overflow: hidden;
+  background-color: #033;
+  position: relative;
 }
 
-.bar1,
-.bar2,
-.bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #f0f0f0;
-    margin: 6px 0;
-    transition: 0.4s;
-    border-radius: 2000px;
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #menuLinks {
+  display: none;
 }
 
-/* Rotate first bar */
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-    transition-duration: 0.1s;
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
-/* Fade out the second bar */
-.change .bar2 {
-    opacity: 0;
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-/* Rotate last bar */
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-    transition-duration: 0.1s;
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
-
-#menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 4px;
-    width: 150px;
-    background-color: #f1f1f1;
-    border-radius: 8px;
-    position: relative;
-    left: 86%;
-    display: none;
-}
-
-#about {
-    text-align: center;
-    color: black;
-}
-
-#home {
-    text-align: center;
-    color: white;
-}
-
-#contact {
-    text-align: center;
-    color: white;
-}
-
-li a {
-    display: block;
-    color: #0a223d;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color on hover */
-li a:hover {
-    background-color: #0a223d;
-    border-radius: 4px;
-    color: white;
+	
+/* Style the active link (or home/logo) */
+.logo {
+  background-color: white;
+  color: #0a223d;
 }
