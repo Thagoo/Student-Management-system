@@ -17,8 +17,7 @@
   <a href="#home" class="logo">Student Management System</a>
   <!-- Navigation links (hidden by default) -->
   <div id="menuLinks">
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
+    <a href="#login.php">Admin login</a>
     <a href="#about">About</a>
   </div>
   <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
