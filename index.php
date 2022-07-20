@@ -14,16 +14,59 @@
 
 <!-- Top Navigation Menu -->
 <div class="topnav">
-  <a href="#home" class="logo">Student Management System</a>
-  <!-- Navigation links (hidden by default) -->
-  <div id="menuLinks">
-    <a href="#login.php">Admin login</a>
-    <a href="#about">About</a>
-  </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+<ul id="menu">
+    <li><a id="logo" href="home">Student Management System</a></li>
+    <li><a id="about" href="#about">About</a></li>
+    <li><a id="login" href="#login.php">Admin login</a></li>
+</ul>
+  
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links >
   <a href="javascript:void(0);" class="icon" onclick="showMenu()">
     <i class="fa fa-bars"></i>
-  </a>
+ </a-->
+ </div>
+
+<div class="form-stu">
+  <p id="eyd">Enter Your Details</p><br>
+  <form action="index.php">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="regno">Register Number</label>
+    <input type="text" id="regno" name="regno" placeholder="Register Number">
+
+    <label for="course">Select Course</label>
+    <select id="course" name="course">
+      <option value="bca">B.C.A</option>
+      <option value="bcom">B.Com</option>
+      <option value="ba">B.A</option>
+    </select>
+  
+    <label for="sem">Select Semester</label>
+    <select id="sem" name="course">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+    </select>
+
+    <input type="submit" value="Submit"><br>
+  </form>
 </div>
+<?php
+
+if(isset($_POST['submit'])){
+    
+    $standard= $_POST['course'];
+    $rollno = $_POST['regno'];
+    
+    include('condb.php');
+    
+    showdetails($course,$regno);   
+}
+?>
+
 </body>
 </html>
