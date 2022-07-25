@@ -17,7 +17,7 @@
 <ul id="menu">
     <li><a id="logo" href="home">Student Management System</a></li>
     <li><a id="about" href="#about">About</a></li>
-    <li><a id="login" href="#login.php">Admin login</a></li>
+    <li><a id="login" href="login.php">Admin login</a></li>
 </ul>
   
   <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links >
@@ -27,7 +27,7 @@
  </div>
 
 <div class="form-stu">
-  <p id="eyd">Enter Your Details</p><br>
+  <p id="eyd">Enter Your Details</p><hr><br>
   <form action="index.php">
     <label for="fname">Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -37,6 +37,7 @@
 
     <label for="course">Select Course</label>
     <select id="course" name="course">
+    <option value="" disabled selected>Select your option</option>
       <option value="bca">B.C.A</option>
       <option value="bcom">B.Com</option>
       <option value="ba">B.A</option>
@@ -44,6 +45,7 @@
   
     <label for="sem">Select Semester</label>
     <select id="sem" name="course">
+    <option value="" disabled selected>Select your option</option>
       <option>1</option>
       <option>2</option>
       <option>3</option>

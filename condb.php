@@ -1,10 +1,7 @@
 <?php
-   // connect to mongodb
-   $m = new MongoClient();
-	
-   echo "Connection to database successfully";
-   // select a database
-   $db = $m->mydb;
-	
-   echo "Database mydb selected";
+   // connect to mysql
+   $con = mysqli_connect('localhost','thagoo','','sms');
+   if($con == false) {
+      echo "Connection to database unsuccessful";
+   }
 ?>
