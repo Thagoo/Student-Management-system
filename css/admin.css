@@ -144,4 +144,7 @@ input[type=button] {
 .form-adm input[type=submit]:hover {
     background-color: #45a049;
   }
-  
+
+#home {
+  font-size: 40px;
+}

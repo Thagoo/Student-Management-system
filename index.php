@@ -28,7 +28,7 @@
 
 <div class="form-stu">
   <p id="eyd">Enter Your Details</p><hr><br>
-  <form action="index.php">
+  <form action="studetails.php" method="post" >
     <label for="fname">Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
@@ -54,19 +54,19 @@
       <option>6</option>
     </select>
 
-    <input type="submit" value="Submit"><br>
+    <input type="submit" value="Submit" name="submit"><br>
   </form>
 </div>
 <?php
 
 if(isset($_POST['submit'])){
     
-    $standard= $_POST['course'];
     $rollno = $_POST['regno'];
     
     include('condb.php');
-    
-    showdetails($course,$regno);   
+    include('showdetails.php');
+  
+    showdetails($regno);
 }
 ?>
 

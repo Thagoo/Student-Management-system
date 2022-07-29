@@ -4,7 +4,7 @@ require('head.php');
 ?>
     <div class="form-adm">
   <p id="eyd">Enter Student Details</p><hr><br>
-  <form action="insert.php" method="post" enctype="multipart/form-data">
+  <form action="insert.php" method="post">
     <label for="fname">Name</label>
     <input type="text" id="fname" name="fname" placeholder="Your name..">
 
@@ -14,9 +14,9 @@ require('head.php');
     <label for="course">Select Course</label>
     <select id="course" name="course">
     <option value="" disabled selected>Select your option</option>
-      <option value="bca">B.C.A</option>
-      <option value="bcom">B.Com</option>
-      <option value="ba">B.A</option>
+      <option value="Bachelor of Computer Applications">B.C.A</option>
+      <option value="Bachelor of Commerce">B.Com</option>
+      <option value="Bachelor of Arts">B.A</option>
     </select>
   
     <label for="sem">Select Semester</label>
@@ -43,11 +43,6 @@ require('head.php');
 </html>
 <?php
 require('../condb.php');
-$con = mysqli_connect('localhost','thagoo','','sms');
-mysqli_select_db($con, "sms");
-   if($con == false) {
-      echo "<script type='text/javasccript'>alert('Connection to database unsuccessful');</script>";
-   }
 if(isset($_POST['submit'])){
     $regno = $_POST['regno'];
     $fname = $_POST['fname'];
@@ -67,6 +62,10 @@ if(isset($_POST['submit'])){
             alert('Data Inserted Successfully');
         </script>
         <?php
+    }
+    else {
+      $failure = "Error" . mysqli_error($con);
+      echo $failure;
     }
 }
 ?>

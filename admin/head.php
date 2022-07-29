@@ -23,5 +23,6 @@ else{
 </head>
 <body>
     <div class="header">
-        <header>Admin Control<header/>
+        <header>Admin Control</header>
+        <a id="home" href="../index.php">Home</a>
     </div>

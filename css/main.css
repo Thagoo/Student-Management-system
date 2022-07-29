@@ -96,3 +96,32 @@ input[type=submit]:hover {
 #eyd {
   text-align: center;
 }
+
+.detHeader {
+  text-align: center;
+  color: #0a223d;
+  background-color: antiquewhite;
+  border-radius: 4px;
+  padding: 20px 20px;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.stuTable th{
+  text-align: center;
+  padding: 15px;
+  color: antiquewhite;
+  border-style: double;
+  border-color: cornsilk;
+  width: 40%;
+  height: 40%;
+}
+
+.stuTable td{
+  text-align: center;
+  padding: 15px;
+  color: antiquewhite;
+  border-style: double;
+  border-color: cornsilk;
+  width: 60%;
+  height: 40%;
+}
