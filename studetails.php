@@ -45,7 +45,7 @@ $qry = "SELECT * FROM `student` WHERE `regno`='$regno'";
             </tr>
             <tr>
                 <th>Attendance</th>
-                <td align="center"><?php echo $data['atten'] ?> </td>
+                <td align="center"><?php echo $data['atten'] ?>%</td>
             </tr>
             <tr>
                 <th>Register Number</th>

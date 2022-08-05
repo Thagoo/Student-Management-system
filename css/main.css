@@ -1,5 +1,6 @@
 body {
     background-color: #0a223d;
+    background-image: linear-gradient(to right, rgb(9, 20, 85), rgb(177, 59, 171));
 }
 .topnav {
   overflow: hidden;
